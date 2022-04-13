@@ -1,0 +1,69 @@
+{
+	"settings" : {
+		"server_url" : "http://localhost:3000",
+		"purchasing" : {
+			"disable_average_cost_calculation" : false
+		}
+	},
+	"page": {
+		"name"    : "Progenetic",
+		"social"  : {
+			"twitter"   : "",
+			"facebook"  : "",
+            "whatsapp"  : ""
+		}
+	},
+	"admin" : {
+		"user_name"    : "root",
+		"password"     : "root",
+		"email"        : "kyele936@gmail.com",
+		"employeeInfo" : {
+			"first_name" : "Cesar",
+			"last_name"  : "Herrera"
+		}
+	},
+	"database" : {
+		"host"     : "localhost",
+		"port"     : 3306,
+		"user"     : "root",
+		"password" : "root",
+		"database" : "progenetic_db",
+		"charset"  : "utf8",
+		"pooling" : {
+			"minimum" : 1, 
+			"maximum" : 100
+		},
+		"connectionTimeout" : 10000
+	},	
+	"security" : {
+		"jwt_key"    : "progenetic_key_2020",
+		"token_life" : "30 days",
+		"ssl" : {
+			"key_file"  : "/home/ssl/cert.key",
+			"cert_file" : "/home/ssl/cert.crt",
+			"enable"    : false
+		},
+		"disable_session_control" : false
+	},
+	"mail": {
+		"user"             : "kyele936@gmail.com",
+		"pass"             : "rdtxmxgqwjxlgzsd",
+		"SENDGRID_API_KEY" : "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"
+	},
+	"mails" : {
+		"contact" : {
+			"recipients" : [
+				// Add Contact mails
+			]
+		}
+	},
+	"services" : {
+		"sigue-mailer" : {
+			"server_url" : "https://mailer-api-sanbox.siguetb.com.mx"
+		},
+		"sigue-auth" : {
+			"account_id" : "progenetic123456789"
+		}
+	},
+	"debug" : true
+}
